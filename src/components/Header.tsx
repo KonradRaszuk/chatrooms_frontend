@@ -1,6 +1,5 @@
 import { useNavigate } from "@tanstack/react-router";
 
-import backArrow from "../assets/back-arrow.png";
 import { useMe } from "../hooks/get-me.hook";
 
 type Props = {
@@ -20,7 +19,12 @@ export default function Header({ roomText, welcomeText }: Props) {
       {roomText != null ? (
         <div className="banner_wrapper_options">
           <button className="go_back_btn" onClick={() => navigate({ to: "/" })}>
-            <img src={backArrow} alt="back_arrow" width="30" height="30" />
+            <img
+              src="/back-arrow.png"
+              alt="back_arrow"
+              width="30"
+              height="30"
+            />
           </button>
           <p>Room: {roomText}</p>
         </div>

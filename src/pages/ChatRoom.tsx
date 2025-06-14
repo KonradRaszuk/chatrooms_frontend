@@ -3,8 +3,6 @@ import { useParams } from "@tanstack/react-router";
 import Header from "../components/Header";
 import Chat from "../components/Chat";
 
-import sendMessage from "../assets/send-message.png";
-
 import { useGetChatroomMessages } from "../hooks/get-chatroom-messages.hook";
 
 import { useMe } from "../hooks/get-me.hook";
@@ -132,7 +130,12 @@ export default function ChatRoom() {
             }}
           />
           <button onClick={handleSendMessage}>
-            <img src={sendMessage} alt="send-message" width="30" height="30" />
+            <img
+              src="/send-message.png"
+              alt="send-message"
+              width="30"
+              height="30"
+            />
           </button>
         </div>
       </div>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import settingsIcon from "../assets/settings.png";
 import { useDeleteChatroom } from "../hooks/delete-chatroom.hook";
 import { useUpdateChatroom } from "../hooks/update-chatroom.hook";
 
@@ -47,7 +46,7 @@ export default function Card({ title, onJoin, id }: RoomCardProps) {
           <span className="join_arrow">→</span>
         </button>
         <button onClick={toggleManager} className="room_settings">
-          <img src={settingsIcon} alt="settings" width="30" height="30" />
+          <img src="/settings.png" alt="settings" width="30" height="30" />
         </button>
       </div>
 
